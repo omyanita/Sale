@@ -1,0 +1,117 @@
+# ---------------------------------------------------------------
+# Site Settings
+# ---------------------------------------------------------------
+title: "Sale Photo Gallery"
+email: karbasi.anita@gmail.com
+description: >- 
+  Welcome to my sale photo gallery. Browse through beautifully 
+  photographed items available for purchase.
+baseurl: "/Sale"  # IMPORTANT: Must match your GitHub repository name
+url: "https://omyanita.github.io"  # Your GitHub Pages URL
+
+# ---------------------------------------------------------------
+# Social Media Settings
+# ---------------------------------------------------------------
+twitter_username: karbasi.anita
+github_username:  omyanita
+# Uncomment and add other social media profiles as needed
+# instagram_username: your_instagram_handle
+# facebook_username: your_facebook_handle
+
+# ---------------------------------------------------------------
+# Navigation Settings (as per Photorama documentation)
+# ---------------------------------------------------------------
+navbar-links:
+  Gallery: "gallery"  # Links to /gallery/ page
+  Journal: "journal"  # Links to /journal/ page
+  About: "about"      # Links to /about/ page
+
+# ---------------------------------------------------------------
+# Theme Settings
+# ---------------------------------------------------------------
+remote_theme: sunbliss/photorama  # Uses the Photorama theme from GitHub
+
+# Photorama-specific settings (commented out for now, uncomment if needed)
+# background:
+#   homepage: images/home.jpg        # Background for homepage
+#   post-list: images/posts-bg.jpg   # Background for post list pages
+#   default-post: images/default-post-bg.jpg  # Default background for posts
+
+# Uncomment and set this if you have a logo
+# logo: /images/logo.png
+
+# ---------------------------------------------------------------
+# Build Settings
+# ---------------------------------------------------------------
+markdown: kramdown  # Markdown processor
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+  syntax_highlighter: rouge  # Syntax highlighter for code blocks
+
+# Plugins
+plugins:
+  - jekyll-remote-theme  # Necessary for using remote themes
+  - jekyll-feed  # Generates an Atom feed for your posts
+
+# Exclude these files and folders from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# ---------------------------------------------------------------
+# Content Settings
+# ---------------------------------------------------------------
+# If you're using collections for organizing your content, uncomment and modify:
+# collections:
+#   products:
+#     output: true
+#     permalink: /:collection/:name/
+
+# Default front matter settings
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#       comments: true
+
+# ---------------------------------------------------------------
+# Pagination Settings (if you decide to use pagination)
+# ---------------------------------------------------------------
+# paginate: 5
+# paginate_path: "/blog/page:num/"
+
+# ---------------------------------------------------------------
+# Additional Features (uncomment and set up as needed)
+# ---------------------------------------------------------------
+# Google Analytics
+# google_analytics: "UA-XXXXXXXX-X"
+
+# Disqus comments
+# disqus:
+#   shortname: your-disqus-shortname
+
+# ---------------------------------------------------------------
+# SEO Settings (if using jekyll-seo-tag plugin)
+# ---------------------------------------------------------------
+# lang: en
+# author: Your Name
+# twitter:
+#   username: your-twitter-handle
+#   card: summary_large_image
+
+# ---------------------------------------------------------------
+# Photorama-specific settings (add any theme-specific settings here)
+# ---------------------------------------------------------------
+# Example (check Photorama documentation for actual available settings):
+# photorama:
+#   thumbnail_size:
+#     x: 400
+#     y: 250
