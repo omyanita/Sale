@@ -5,6 +5,26 @@ description: "masonry"
 active: gallery
 header-img: "img/gallery-bg.jpg"
 album-title: "my 1st album"
+images:
+ - image_path: /gallery/archive/g01/bg1.jpg
+   caption: IMAGE TITLE
+   copyright: © 250
+ - image_path: /gallery/archive/g01/bg2.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/archive/g01/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/archive/g01/bg4.png
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/archive/g01/bg5.png
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/archive/g01/bg6.png
+   caption: IMAGE TITLE
+   copyright: © 350
+
 ---
 
 <html class="no-js" lang="en">
@@ -23,7 +43,26 @@ album-title: "my 1st album"
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
 		
-{% include_relative _gallery_content.html %}
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary" id="{{ image.caption }}">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
 
 		</div><!-- END .wrapper -->
 	</section>

@@ -1,0 +1,19 @@
+{% assign gallery = site.data.gallery | first %}
+{% for image in gallery.images %}
+  <figure class="gallery-item">
+    <header class='gallery-icon'>
+      <a href="{% if image.image_path contains 'http' %}{{ image.image_path }}{% else %}{{ site.url }}{{ site.baseurl }}{{ image.image_path }}{% endif %}" 
+         class="popup" 
+         title="{{ image.caption }}" 
+         data-caption="{{ image.copyright }}">
+        <img src="{% if image.image_path contains 'http' %}{{ image.image_path }}{% else %}{{ site.url }}{{ site.baseurl }}{{ image.image_path }}{% endif %}">
+      </a>
+    </header>	
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary" id="{{ image.caption }}">
+        <h3>{{image.caption}}</h3>
+        <p>{{image.copyright}}</p>
+      </div>
+    </figcaption>
+  </figure>
+{% endfor %}

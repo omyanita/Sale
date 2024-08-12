@@ -1,0 +1,23 @@
+- folder: /gallery/archive/g01
+  images:
+    - image_path: /gallery/archive/g01/bg1.jpg
+      caption: IMAGE TITLE
+      copyright: © 250
+    - image_path: /gallery/archive/g01/bg2.jpg
+      caption: IMAGE TITLE
+      copyright: © photorama
+    - image_path: /gallery/archive/g01/bg3.jpg
+      caption: IMAGE TITLE
+      copyright: © photorama
+    - image_path: /gallery/archive/g01/bg4.png
+      caption: IMAGE TITLE
+      copyright: © photorama
+    - image_path: /gallery/archive/g01/bg5.png
+      caption: IMAGE TITLE
+      copyright: © photorama
+    - image_path: /gallery/archive/g01/bg6.png
+      caption: IMAGE TITLE
+      copyright: © 350
+    - image_path: https://lh3.googleusercontent.com/pw/AP1GczOoM3Q3gZliBQkGVswpib3L1pipPgtsuiyrnYaTd1bWQjilU-D71nMHliuSDhFbfRLrs9YSNuOEF1LvYcYiGihWcT6wpn4Ms4mdKFbexj8zUWqQaFSPZburB7Ab7dD1QxkkfVdCyY34r1dIRKmzhEIS=w1558-h1558-s-no-gm
+      caption: IMAGE TITLE
+      copyright: © 350
